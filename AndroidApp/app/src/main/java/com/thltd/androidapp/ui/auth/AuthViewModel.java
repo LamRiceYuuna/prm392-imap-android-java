@@ -8,7 +8,7 @@ import androidx.lifecycle.ViewModel;
 
 import com.thltd.androidapp.data.dto.login.LoginRequest;
 import com.thltd.androidapp.data.dto.login.LoginResponse;
-import com.thltd.androidapp.data.repository.UserService;
+import com.thltd.androidapp.data.service.UserService;
 import com.thltd.androidapp.ui.base.UiState;
 
 import java.util.function.Function;
