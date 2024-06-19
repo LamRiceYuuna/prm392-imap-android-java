@@ -14,6 +14,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.thltd.androidapp.R;
+import com.thltd.androidapp.databinding.ActivityAuthBinding;
 import com.thltd.androidapp.ui.base.UiState;
 
 import dagger.hilt.android.AndroidEntryPoint;
@@ -21,15 +22,10 @@ import dagger.hilt.android.AndroidEntryPoint;
 @AndroidEntryPoint
 public class AuthActivity extends AppCompatActivity {
     private  AuthViewModel viewModel;
-    private EditText edUsername;
-    private EditText edPassword;
-    private Button btnLogin;
-
+    private ActivityAuthBinding binding;
     private void bindingView(){
         viewModel = new ViewModelProvider(this).get(AuthViewModel.class);
-        edUsername = findViewById(R.id.edUsername);
-        edPassword = findViewById(R.id.edPassword);
-        btnLogin = findViewById(R.id.btnLogin);
+        binding = ActivityAuthBinding.inflate(getLayoutInflater());
     }
     private void bindingAction(){
         viewModel.getUiState().observe(this, uiState -> {
@@ -45,24 +41,19 @@ public class AuthActivity extends AppCompatActivity {
                 }
             }
         });
-        btnLogin.setOnClickListener(this::onBtnLoginClick);
+        binding.btnLogin.setOnClickListener(this::onBtnLoginClick);
     }
 
     private void onBtnLoginClick(View view) {
-        viewModel.login(edUsername.getText().toString(), edPassword.getText().toString());
+        viewModel.login(binding.edUsername.getText().toString(), binding.edPassword.getText().toString());
     }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_auth);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
         bindingView();
+        setContentView(binding.getRoot());
         bindingAction();
     }
 }

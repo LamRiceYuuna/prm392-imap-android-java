@@ -1,4 +1,4 @@
-package com.thltd.androidapp.data.repository;
+package com.thltd.androidapp.data.service;
 
 import com.thltd.androidapp.data.api.UserRepository;
 import com.thltd.androidapp.data.dto.login.LoginRequest;

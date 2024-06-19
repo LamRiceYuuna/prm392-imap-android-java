@@ -56,7 +56,7 @@ public class NetworkModule {
 
     @Provides
     @Singleton
-    public UserRepository providesUserService(Retrofit retrofit){
+    public UserRepository providesUserRepository(Retrofit retrofit){
         return retrofit.create(UserRepository.class);
     }
 }
