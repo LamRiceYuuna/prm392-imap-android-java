@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.setting.SettingFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:title="Settings"
+        android:titleTextColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- ACCOUNT Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ACCOUNT"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="8dp"
+                android:paddingBottom="4dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="8dp"
+                android:background="@drawable/background_item"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/img"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="16dp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edit Profile"
+                        android:textSize="14sp"
+                        android:layout_gravity="start" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="atifamin"
+                        android:textColor="#757575"
+                        android:textSize="12sp"
+                        android:layout_gravity="start" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src=""
+                    android:layout_gravity="center_vertical" />
+            </LinearLayout>
+
+            <!-- Other account options -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thank you's Badges"
+                android:padding="16dp"
+                android:background="@drawable/background_item"
+                android:clickable="true"
+                android:focusable="true" />
+            <Switch
+                android:id="@+id/switchButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_item"
+                android:checked="false"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:switchMinWidth="48dp"
+                android:switchPadding="8dp"
+                android:text="Notification Location"
+                android:thumb="@drawable/switch_thumb_selector"
+                android:track="@drawable/switch_track_selector" />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="change pass"
+                android:textColor="@android:color/black"
+                android:padding="16dp"
+                android:gravity="start|center_vertical"
+                app:backgroundTint="@drawable/background_item"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textColor="#F44336"
+                android:padding="16dp"
+                android:gravity="start|center_vertical"
+                app:backgroundTint="@drawable/background_item"
+                android:clickable="true"
+                android:focusable="true" />
+
+
+            <!-- LIKE APP Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="LIKE APP"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Like us on Facebook"
+                android:padding="16dp"
+                android:background="@drawable/background_item"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Follow us on Twitter"
+                android:padding="16dp"
+                android:background="@drawable/background_item"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Follow us on Instagram"
+                android:padding="16dp"
+                android:background="@drawable/background_item"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rate on the Play Store"
+                android:padding="16dp"
+                android:background="@drawable/background_item"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- ABOUT Section -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ABOUT"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingTop="16dp"
+                android:paddingBottom="4dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact Us"
+                android:padding="16dp"
+                android:background="@drawable/background_item"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Terms of Service"
+                android:padding="16dp"
+                android:background="@drawable/background_item"
+                android:clickable="true"
+                android:focusable="true" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
