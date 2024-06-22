@@ -2,4 +2,9 @@
     <string name="app_name">AndroidApp</string>
     <string name="login_text">Already have an account? <b><font color="#FF5722">Login Now</font></b></string>
     <string name="signup_text">Dont have an account? <b><font color="#FF5722">Sign Up</font></b></string>
+    <string name="avatar_icon" />
+    <string name="type_notification">Type notification</string>
+    <string name="content_in_this">Content in this</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>
