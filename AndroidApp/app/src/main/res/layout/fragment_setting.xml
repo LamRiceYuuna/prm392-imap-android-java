@@ -2,10 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.setting.Setting">
+    tools:context=".ui.setting.SettingFragment">
 
+    <!-- TODO: Update blank fragment layout -->
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
         android:layout_width="0dp"
@@ -93,15 +95,6 @@
                 android:background="@drawable/background_item"
                 android:clickable="true"
                 android:focusable="true" />
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="change pass"
-                android:padding="16dp"
-                android:background="@drawable/background_item"
-                android:clickable="true"
-                android:focusable="true" />
-
             <Switch
                 android:id="@+id/switchButton"
                 android:layout_width="match_parent"
@@ -115,15 +108,28 @@
                 android:text="Notification Location"
                 android:thumb="@drawable/switch_thumb_selector"
                 android:track="@drawable/switch_track_selector" />
-            <TextView
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="change pass"
+                android:textColor="@android:color/black"
+                android:padding="16dp"
+                android:gravity="start|center_vertical"
+                app:backgroundTint="@drawable/background_item"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Logout"
                 android:textColor="#F44336"
                 android:padding="16dp"
-                android:background="@drawable/background_item"
+                android:gravity="start|center_vertical"
+                app:backgroundTint="@drawable/background_item"
                 android:clickable="true"
                 android:focusable="true" />
+
 
             <!-- LIKE APP Section -->
             <TextView
@@ -200,4 +206,5 @@
                 android:focusable="true" />
         </LinearLayout>
     </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
