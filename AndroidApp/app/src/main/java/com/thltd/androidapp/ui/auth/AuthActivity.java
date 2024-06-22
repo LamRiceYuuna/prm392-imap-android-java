@@ -55,5 +55,6 @@ public class AuthActivity extends AppCompatActivity {
         bindingView();
         setContentView(binding.getRoot());
         bindingAction();
+        getSupportActionBar().hide();
     }
 }
