@@ -1,0 +1,5 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <solid android:color="#81C784" /> <!-- Màu sắc của dải track khi bật -->
+    <corners android:radius="16dp" /> <!-- Góc bo tròn cho dải track -->
+</shape>
