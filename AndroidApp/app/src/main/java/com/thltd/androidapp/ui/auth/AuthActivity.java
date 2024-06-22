@@ -13,6 +13,7 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 import androidx.lifecycle.ViewModelProvider;
 
+import com.thltd.androidapp.ProfileFragment;
 import com.thltd.androidapp.R;
 import com.thltd.androidapp.databinding.ActivityAuthBinding;
 import com.thltd.androidapp.ui.base.UiState;
