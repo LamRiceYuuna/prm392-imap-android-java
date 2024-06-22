@@ -1,4 +1,4 @@
-package com.thltd.androidapp;
+package com.thltd.androidapp.ui.Profile;
 
 import android.os.Bundle;
 
@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.thltd.androidapp.R;
 
 /**
  * A simple {@link Fragment} subclass.

@@ -2,21 +2,13 @@ package com.thltd.androidapp.ui.auth;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.thltd.androidapp.ProfileFragment;
-import com.thltd.androidapp.R;
 import com.thltd.androidapp.databinding.ActivityAuthBinding;
-import com.thltd.androidapp.ui.base.UiState;
 
 import dagger.hilt.android.AndroidEntryPoint;
 
