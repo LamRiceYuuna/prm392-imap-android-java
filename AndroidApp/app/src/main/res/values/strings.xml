@@ -3,4 +3,6 @@
     <string name="avatar_icon" />
     <string name="type_notification">Type notification</string>
     <string name="content_in_this">Content in this</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
 </resources>
